@@ -1,0 +1,80 @@
+@mixin header-links{
+    display: block;
+    text-decoration: none;
+    color: $color2;
+    max-width: 59px;
+    width: 100%;
+    min-height: 23px;
+    font: {
+        family: $font;
+        size: 16px;
+        weight: lighter;
+
+    }
+    line-height: 22.4px;
+
+}
+
+$color1: black;
+$color2: white;
+$font: Source sans pro, sans-serif;
+$font2: Actor, sans-serif;
+
+.header{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    max-width: 1350px;
+    width: 100%;
+    min-height: 25px;
+    margin: auto;
+    .logo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        max-width: 90px;
+        width: 100%;
+        min-height: 36px;
+        
+    }
+    .logo a{
+        color: $color2;
+        font: {
+         size: 24px;
+         family: $font2;
+         weight: lighter;
+        }
+        line-height: 36px;
+        letter-spacing: -0.35px;
+        text-decoration: none;
+    }
+  
+    .logo:hover{
+        cursor: pointer;
+    
+    }
+}
+nav{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+    }
+    li{
+        float: left;
+        padding: 0 20px 0 20px;
+
+
+    }
+    a{
+        @include header-links; 
+    }
+    a:hover{
+        cursor: pointer;
+        color: gray;
+    }
+
+}
