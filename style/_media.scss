@@ -1,0 +1,170 @@
+$color1: black;
+$color2: #FFFFFF;
+$font: Source sans pro, sans-serif;
+$font2: Actor, sans-serif;
+$font3: Poppins, sans-serif;
+
+@media only screen and (max-width: 1024px){
+    body{
+        width: 100%;
+        min-height: 1024px;
+        grid-template-rows: 0.5fr;
+
+    }
+    .header{
+        grid-template-columns: 1fr 1fr 0.2fr;
+
+        .logo{
+            justify-self: center;
+            }
+        nav{
+            grid-column: 2/3;
+        }
+    }
+    .main{
+        flex-direction: column;
+        max-width: 617px;
+        width: 100%;
+        margin:auto;
+    }
+        
+    .main-first-section-text{
+        margin: auto;
+        max-width: 574px;
+        width: 100%;
+        min-height: 172px;
+            h2{
+                max-width: 315px;
+                width: 100%;
+                min-height: 83px;
+                margin: auto;
+                color: $color2;
+                text-align: center;
+                font: {
+                    size: 72px;
+                    weight: normal;
+                    family: $font3;
+                }
+                line-height: 82.8px;
+                letter-spacing: -1.6px;
+            }
+            p{
+                max-width: 573.5px;
+                width: 100%;
+                min-height: 66px;
+                color: $color2;
+                text-align: justify;
+                text-align-last: center;
+                font: {
+                    size: 22px;
+                    weight: normal;
+                    family: $font;
+            
+                }
+                line-height: 33px;
+        
+            }
+        }
+
+        .main-image-container{
+            display: none;
+        }
+        .main-image-container-tablet{
+            display: block;
+        
+        }
+        .main-image-tablet{
+            max-width: 617px;
+            width: 100%;
+            min-height: 512px;
+        }   
+}
+
+    @media only screen and (max-width: 606px){
+        body{
+            grid-template-rows: 0.2fr;
+            width: 100%;
+            min-height: 568px;
+    
+            }
+            .menu-phone{
+                display: block;
+            }
+            .header{
+                grid-template-columns: 1fr 1fr 0.2fr;
+            }
+
+            .logo{
+                justify-self: center;
+            }
+            nav{
+                display: none;
+            }
+            .main{
+                flex-direction: column;
+                max-width: 320px;
+                width: 100%;
+                margin:auto;
+            }
+            .main-first-section-text{
+                margin: auto;
+                max-width: 211px;
+                width: 100%;
+                min-height: 104px;
+                h2{
+                    margin: auto;
+                    max-width: 158px;
+                    width: 100%;
+                    min-height: 40px;
+                    color: $color2;
+                    text-align: center;
+                    font: {
+                        size: 36px;
+                        weight: normal;
+                        family: $font3;
+                    }
+                    line-height: 39.6px;
+                    letter-spacing: -0.8px;
+                }
+                p{
+                    max-width: 211px;
+                    width: 100%;
+                    min-height: 49px;
+                    color: $color2;
+                    text-align: justify;
+                    text-align-last: center;
+                    font: {
+                        size: 12px;
+                        weight: normal;
+                        family: $font;
+                        }
+                    line-height: 18px;
+            
+                }
+            }
+            .main-image-container{
+                display: none;
+            }
+            .main-image-container-tablet{
+                display: none;
+          
+            }
+            .main-image-container-phone{
+                display: block;
+                max-width: 320px;
+                width: 100%;
+                min-height: 366px;
+                margin: auto;
+
+            }
+            .main-image-phone{
+                max-width: 320px;
+                width: 100%;
+                min-height: 366px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+}
+
