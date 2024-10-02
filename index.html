@@ -7,31 +7,47 @@
         <script src="https://kit.fontawesome.com/9ad9eacac3.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        <meta name="description" content="Music,concerts and albums">
+        <meta name="keywords" content="Music, guitar, concerts">
+        <meta name="author" content="Mahmoud">
+        <meta property="og:title" content="Learn Mudic" />
+        <meta property="og:description" content="watch music videos, learn music and more" />
+        <meta name="twitter:description" content="watch music videos, learn music and more">
         <title>Music</title>
     </head>
     <body>
         <header>
             <div class="header">
-                <div class="menu-phone">
-                    <div class="header-menu">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <div class="header-menu-content">
+                <!-- <div class="menu-phone">
+                    <div class="header-menu" >
+                        <a onclick="open()"><i class="fa-solid fa-ellipsis"></i></a>
+                        <div id="open" class="header-menu-content">
                             <a href="#">Works</a>
                             <a href="#">Services</a>
                             <a href="#">Contact</a>
                         </div>
                     </div>
-                </div>
-                    <div class="logo">
-                        <a href="index.html">Music.</a>
+                </div>                  -->
+                <div id="nav" class="container">
+                    <i class="fa-solid fa-xmark close-icon" onclick="CloseMenu()"></i>
+                    <div class="content">
+                        <a href="#">Works</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
                     </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </nav>
+                </div>
+                <a class="icon"><i class="fa-solid fa-ellipsis open-icon" onclick="OpenMenu()"></i></a>
+                <script src="style/menu-phone.js"></script>
+                <div class="logo">
+                    <a href="index.html">Music.</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main>
@@ -44,7 +60,7 @@
                             Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
                             Donec viverra eleifend lacus, vitae ullamcor.
                         </p>
-                    </div>
+                </div>
                     <div class="main-image-container"><img class="main-image" src="images/image.jpg" alt="musician" title="musician"></div>
                     <div class="main-image-container-tablet"><img class="main-image-tablet" src="images/image-tablet.png" alt="musician" title="musician"></div>
                     <div class="main-image-container-phone"><img class="main-image-phone" src="images/image-phone.png" alt="musician" title="musician"></div>

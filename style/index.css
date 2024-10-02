@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: ()["3, 1fr"];
@@ -21,59 +21,78 @@ body {
   display: none;
 }
 
-.menu-phone {
+.container {
   display: none;
 }
 
-.menu-phone {
-  float: right;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+.icon {
+  display: none;
+}
+
+.container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 4, 12, 0.6156862745);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.open-icon {
+  cursor: pointer;
+  color: white;
+}
+
+.icon {
+  -ms-grid-column: 3;
+  grid-column: 3;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column-align: self-end;
-      justify-self: self-end;
+  grid-row: 2;
   -ms-grid-row-align: center;
       align-self: center;
 }
-.menu-phone i {
-  color: #242635;
-  max-width: 24px;
-  width: 100%;
-  min-height: 24px;
-}
-.menu-phone i:hover {
-  cursor: pointer;
-}
-.menu-phone .header-menu-content {
-  display: none;
-  float: right;
-  width: 100px;
-  max-width: 100%;
+
+.close-icon {
   position: absolute;
-  right: 0;
-  z-index: 1;
+  left: 10px;
+  top: 15px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
 }
-.menu-phone .header-menu-content a {
-  display: block;
-  text-align: center;
-  margin: 10px;
+
+.content {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 40%;
+}
+
+.content a {
   text-decoration: none;
-  color: #FFFFFF;
+  display: block;
+  color: gray;
+  padding: 10px;
   font-family: Source sans pro, sans-serif;
 }
-.menu-phone .active {
-  pointer-events: none;
-  background-color: lightgray;
-  text-align: center;
-}
-.menu-phone .header-menu-content a:hover {
+
+.content a:hover {
   color: lightgray;
-}
-.menu-phone .header-menu:hover .header-menu-content {
-  display: block;
 }
 
 .header {
@@ -308,7 +327,10 @@ nav a:hover {
     width: 100%;
     min-height: 568px;
   }
-  .menu-phone {
+  .container {
+    display: block;
+  }
+  .icon {
     display: block;
   }
   .header {

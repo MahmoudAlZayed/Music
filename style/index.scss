@@ -8,7 +8,7 @@ $font3: Poppins, sans-serif;
     box-sizing: border-box;
 }
 body{
-    margin: 0;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat("3, 1fr");
     grid-template-rows: 1fr;
@@ -20,7 +20,13 @@ body{
 .section{
     display: none;
 }
-.menu-phone{
+// .menu-phone{
+//     display: none;
+// }
+.container{
+    display: none;
+}
+.icon{
     display: none;
 }
 @import "menu-phone";

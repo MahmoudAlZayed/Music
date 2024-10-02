@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body {
     width: 100%;
     min-height: 1024px;
@@ -15,7 +15,8 @@
   }
   .header nav {
     -ms-grid-column: 2;
-    grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
   }
   .main {
     -webkit-box-orient: vertical;
@@ -26,13 +27,13 @@
     width: 100%;
     margin: auto;
   }
-  .main .main-first-section-text {
+  .main-first-section-text {
     margin: auto;
     max-width: 574px;
     width: 100%;
     min-height: 172px;
   }
-  .main .main-first-section-text h2 {
+  .main-first-section-text h2 {
     max-width: 315px;
     width: 100%;
     min-height: 83px;
@@ -45,7 +46,7 @@
     line-height: 82.8px;
     letter-spacing: -1.6px;
   }
-  .main .main-first-section-text p {
+  .main-first-section-text p {
     max-width: 573.5px;
     width: 100%;
     min-height: 66px;
@@ -58,21 +59,24 @@
     font-family: Source sans pro, sans-serif;
     line-height: 33px;
   }
-  .main .main-image-container {
+  .main-image-container {
     display: none;
   }
-  .main .main-image-container-tablet {
+  .main-image-container-tablet {
     display: block;
   }
-  .main .main-image-tablet {
+  .main-image-tablet {
     max-width: 617px;
     width: 100%;
     min-height: 512px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .main-image-container-tablet {
-    display: none;
+@media only screen and (max-width: 606px) {
+  body {
+    -ms-grid-rows: 0.2fr;
+    grid-template-rows: 0.2fr;
+    width: 100%;
+    min-height: 568px;
   }
   .menu-phone {
     display: block;
@@ -85,36 +89,8 @@
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  body {
-    -ms-grid-rows: 0.2fr;
-    grid-template-rows: 0.2fr;
-    width: 100%;
-    min-height: 568px;
-  }
-  .logo {
-    -ms-grid-column: 3;
-    grid-column: 3;
-  }
   nav {
     display: none;
-  }
-  .main-image-container {
-    display: none;
-  }
-  .main-image-container-phone {
-    display: block;
-    max-width: 320px;
-    width: 100%;
-    min-height: 366px;
-    margin: auto;
-  }
-  .main-image-phone {
-    max-width: 320px;
-    width: 100%;
-    min-height: 366px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   .main {
     -webkit-box-orient: vertical;
@@ -156,5 +132,26 @@
     font-weight: normal;
     font-family: Source sans pro, sans-serif;
     line-height: 18px;
+  }
+  .main-image-container {
+    display: none;
+  }
+  .main-image-container-tablet {
+    display: none;
+  }
+  .main-image-container-phone {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    min-height: 366px;
+    margin: auto;
+  }
+  .main-image-phone {
+    max-width: 320px;
+    width: 100%;
+    min-height: 366px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
