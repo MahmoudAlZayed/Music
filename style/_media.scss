@@ -80,6 +80,7 @@ $font3: Poppins, sans-serif;
         }   
 }
 
+
     @media only screen and (max-width: 606px){
         body{
             grid-template-rows: 0.2fr;
@@ -87,9 +88,6 @@ $font3: Poppins, sans-serif;
             min-height: 568px;
     
             }
-            // .menu-phone{
-            //     display: block;
-            // }
             .container{
                 display: block;
             }

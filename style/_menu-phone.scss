@@ -5,58 +5,6 @@ $font: Source sans pro, sans-serif;
 $font2: Actor, sans-serif;
 $font3: Poppins, sans-serif;
 
-
-// .menu-phone{
-//     float: right;
-//     grid-column: 2/3;
-//     grid-row: 2/3;
-//     justify-self: self-end;
-//     align-self: center;
-    
-//     i {
-//         color: $color3;
-//         max-width: 24px;
-//         width: 100%;
-//         min-height: 24px;
-//     }
-//     i:hover{
-//         cursor: pointer;
-//     }
-//     .header-menu-content{
-//         display: none;
-//         float: right;
-//         width: 100px;
-//         max-width: 100%;
-//         position: absolute;
-//         right: 0;
-//         z-index: 1;
-        
-//     }
-//     .header-menu-content a{
-//         display: block;
-//         text-align: center;
-//         margin: 10px;
-//         text-decoration: none;
-//         color: $color2;
-//         font-family: $font; 
-        
-//     }
-//     .active{
-//         pointer-events: none;
-//         background-color: lightgray;
-//         text-align: center;
-//     }
-//     .header-menu-content a:hover{
-//         color: lightgray;
-
-//     }
-
-//     .header-menu:hover .header-menu-content{
-//         display: block;
-//     }
-
-// }
-
 .container{
     height: 100%;
     width: 0;
@@ -71,7 +19,6 @@ $font3: Poppins, sans-serif;
 .open-icon{
     cursor: pointer;
     color: white;
-    
 
 }
 .icon{
