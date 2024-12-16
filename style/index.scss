@@ -1,82 +1,79 @@
 $color1: black;
-$color2: #FFFFFF;
+$color2: #ffffff;
 $font: Source sans pro, sans-serif;
 $font2: Actor, sans-serif;
 $font3: Poppins, sans-serif;
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat("3, 1fr");
-    grid-template-rows: 1fr;
-    max-width: 1440px;
-    width: 100%;
-    min-height: 810px;
-    background-color: $color1;
+body {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat("3, 1fr");
+  grid-template-rows: 1fr;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 810px;
+  background-color: $color1;
 }
-.section{
-    display: none;
+.section {
+  display: none;
 }
-.container{
-    display: none;
+.container {
+  display: none;
 }
-.icon{
-    display: none;
+.icon {
+  display: none;
 }
 @import "menu-phone";
 
 @import "header";
 
-.main{
-    display: flex;
-    max-width: 1350px;
-    width: 100%;
-    margin: auto;
-    justify-content: space-between;
+.main {
+  display: flex;
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
 }
-.main-first-section-text{
-    max-width: 416px;
-    width: 100%;
-    min-height: 244px;
-    h2{
-        color: $color2;
-        font: {
-            size: 84px;
-            weight: normal;
-            family: $font3;
-
-        }
-        line-height: 102px;
-        letter-spacing: -2px;
+.main-first-section-text {
+  max-width: 416px;
+  width: 100%;
+  min-height: 244px;
+  h2 {
+    color: $color2;
+    font: {
+      size: 84px;
+      weight: normal;
+      family: $font3;
     }
-    p{
-        max-width: 410px;
-        width: 100%;
-        min-height: 98px;
-        color: $color2;
-            font: {
-                size: 22px;
-                weight: normal;
-                family: $font;
-    
-            }
-            line-height: 34px;
-
-    }
-}
-.main-image{
-    max-width: 585px;
+    line-height: 102px;
+    letter-spacing: -2px;
+  }
+  p {
+    max-width: 410px;
     width: 100%;
-    min-height: 690px;
+    min-height: 98px;
+    color: $color2;
+    font: {
+      size: 22px;
+      weight: normal;
+      family: $font;
+    }
+    line-height: 34px;
+  }
 }
-.main-image-container-tablet{
-    display: none;
+.main-image {
+  max-width: 585px;
+  width: 100%;
+  min-height: 690px;
 }
-.main-image-container-phone{
-    display: none;
+.main-image-container-tablet {
+  display: none;
+}
+.main-image-container-phone {
+  display: none;
 }
 
 @import "media";
